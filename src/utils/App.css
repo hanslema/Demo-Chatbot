@@ -1,0 +1,66 @@
+/*.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/
+
+
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  mode: "jit",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#00040f";
+        secondary: "#00f6ff";
+        dimWhite: "rgba(255, 255, 255, 0.7)";
+        dimBlue: "rgba(9, 151, 124, 0.1)";
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"];
+      };
+    },
+    screens: {
+      xs: "480px";
+      ss: "620px";
+      sm: "768px";
+      md: "1060px";
+      lg: "1200px";
+      xl: "1700px";
+    };
+  };
+  plugins: [];
+};
